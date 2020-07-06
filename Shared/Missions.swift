@@ -14,6 +14,8 @@ struct Missions: View {
             List(missions.Missions, id: \.flightNumber) { mission in
                 NavigationLink(destination: Detail(mission: mission)){
                     Launch(missionContext: mission)
+                        .padding(.bottom, 3)
+                        .padding(.top, 3)
                 }
                 
             }

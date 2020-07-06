@@ -1,6 +1,6 @@
 //
 //  Detail.swift
-//  SpaceAppUI
+//  MaxQ
 //
 //  Created by Hariharan Murugesan on 04/07/20.
 //
@@ -67,7 +67,7 @@ struct Detail: View {
             Spacer()
             
         }
-        
+        .frame(minWidth: 100, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: 500, minHeight: 100, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: 500, alignment: .center)
         .navigationTitle(mission.missionName ?? "Mission")
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 10)
     }

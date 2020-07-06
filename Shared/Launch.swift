@@ -1,6 +1,6 @@
 //
 //  Launch.swift
-//  SpaceAppUI
+//  MaxQ
 //
 //  Created by Hariharan Murugesan on 04/07/20.
 //
