@@ -74,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		4702C34924B3BECE006A1D69 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		470B444A24B3C3DD0002AEB8 /* Scratchpad.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Scratchpad.txt; sourceTree = "<group>"; };
 		4713DBDE24B07A52000024E5 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		4719157624B103B4003736FC /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		47255C3624B083AB0073F9F0 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 				47255C3624B083AB0073F9F0 /* Sidebar.swift */,
 				47F7393024B0A1D100121FD2 /* Logic.swift */,
 				4719157624B103B4003736FC /* PreviewData.swift */,
+				470B444A24B3C3DD0002AEB8 /* Scratchpad.txt */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
