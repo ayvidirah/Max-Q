@@ -35,7 +35,7 @@ struct Launch: View {
                 Text(missionContext.details ?? "NA")
                     .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                     .lineLimit(3)
-                 //   .foregroundColor(.secondary)
+                    //   .foregroundColor(.secondary)
                     .font(.subheadline)
                     .padding(.bottom, 3.0)
                 
