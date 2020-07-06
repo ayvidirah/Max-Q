@@ -26,7 +26,7 @@ struct Detail: View {
                             .cornerRadius(25)
                             .padding(.all, 3)
                         
-                        Text("\(mission.rocket?.rocketName ?? "") - \(mission.rocket?.firstStage?.cores?.first?.coreSerial ?? "")")
+                        Text("\(mission.rocket?.rocketName ?? "") - \(mission.rocket?.firstStage?.cores?.first?.coreSerial ?? "") - Block \(mission.rocket?.firstStage?.cores?.first?.block ?? 404)")
                             .font(.title3)
                             //.foregroundColor(.secondary)
                             .multilineTextAlignment(.trailing)
@@ -56,14 +56,27 @@ struct Detail: View {
             
             Text(mission.launchSite?.siteNameLong ?? "")
                 .padding(.bottom, 20)
-            Text(mission.launchDateLocal ?? "")
             
+            Text(readableDate(mission.launchDateLocal ?? ""))
+            
+            if mission.links?.videoLink != nil {
             Divider()
             Text("Webcast")
                 .font(.title)
                 .padding(.bottom, 20)
             
-            Link("Webcast of \(mission.missionName ?? "Mission")", destination: URL(string: "\(mission.links?.videoLink ?? "https://spacex.com/")")!)
+         
+                Link("Webcast of \(mission.missionName ?? "Mission")", destination: URL(string: "\(mission.links?.videoLink ?? "https://spacex.com/")")!)
+            } else {
+                Divider()
+                Text("Official Information")
+                    .font(.title)
+                    .padding(.bottom, 10)
+                
+                Link("Official info about \(mission.missionName ?? "Mission") at spacex.com", destination: URL(string: "https://spacex.com/")!)
+            }
+            
+
             
             
             Spacer()
@@ -118,14 +131,25 @@ struct Detail: View {
             
             Text(mission.launchSite?.siteNameLong ?? "")
                 .padding(.bottom, 20)
-            Text(mission.launchDateLocal ?? "")
+
+            Text(readableDate(mission.launchDateLocal ?? ""))
             
+            if mission.links?.videoLink != nil {
             Divider()
             Text("Webcast")
                 .font(.title)
                 .padding(.bottom, 20)
             
-            Link("Webcast of \(mission.missionName ?? "Mission")", destination: URL(string: "\(mission.links?.videoLink ?? "https://spacex.com/")")!)
+         
+                Link("Webcast of \(mission.missionName ?? "Mission")", destination: URL(string: "\(mission.links?.videoLink ?? "https://spacex.com/")")!)
+            } else {
+                Divider()
+                Text("Official Information")
+                    .font(.title)
+                    .padding(.bottom, 10)
+                
+                Link("Official info about \(mission.missionName ?? "Mission") at spacex.com", destination: URL(string: "https://spacex.com/")!)
+            }
             
             
             Spacer()
@@ -134,7 +158,7 @@ struct Detail: View {
         
         .frame(minWidth: 100, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: 500, minHeight: 100, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: 500, alignment: .center)
         .navigationTitle(mission.missionName ?? "Mission")
-        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 1)
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 5)
     }
 
     #endif

@@ -15,7 +15,7 @@ struct Missions: View {
             VStack{
                 SearchBar(text: $searchText)
                     .padding(.bottom, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                List(missions.Missions.filter{((searchText == "" ? true: $0.missionName?.lowercased().contains(searchText.lowercased())) ?? false) || ((searchText == "" ? true: $0.details?.lowercased().contains(searchText.lowercased())) ?? false)}, id: \.details) { mission in
+                List(missions.Missions.filter{((searchText == "" ? true: $0.missionName?.plain.lowercased().contains(searchText.plain.lowercased())) ?? false) || ((searchText == "" ? true: $0.details?.plain.lowercased().contains(searchText.plain.lowercased())) ?? false) || ((searchText == "" ? true: $0.rocket?.firstStage?.cores?.first?.coreSerial?.plain.lowercased().contains(searchText.plain.lowercased())) ?? false) || ((searchText == "" ? true: $0.rocket?.firstStage?.cores?.first?.landingType?.plain.lowercased().contains(searchText.plain.lowercased())) ?? false) || ((searchText == "" ? true: $0.rocket?.firstStage?.cores?.first?.landingVehicle?.plain.lowercased().contains(searchText.plain.lowercased())) ?? false) || ((searchText == "" ? true: $0.flightNumber?.hashed.contains(searchText.plain.lowercased())) ?? false || ((searchText == "" ? true: $0.rocket?.secondStage?.payloads?.first?.orbit?.contains(searchText.plain.lowercased())) ?? false) || ((searchText == "" ? true: $0.rocket?.secondStage?.payloads?.first?.nationality?.contains(searchText.plain.lowercased())) ?? false))}, id: \.details) { mission in
                     NavigationLink(destination: Detail(mission: mission)){
                         Launch(missionContext: mission)
                             .padding(.bottom, 3)
@@ -39,21 +39,3 @@ struct ContentView_Previews: PreviewProvider {
         Missions()
     }
 }
-
-
-/*]
- 
- 1
- 2
- 3
- List(todoItems.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { item in
-     Text(item.name)
- }
- 
- 
- NavigationLink(destination: Detail(mission: mission)){
-     Launch(missionContext: mission)
-         .padding(.bottom, 3)
-         .padding(.top, 3)
- }
- */

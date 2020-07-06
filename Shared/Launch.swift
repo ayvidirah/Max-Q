@@ -23,6 +23,12 @@ struct Launch: View {
                     Text(missionContext.missionName ?? "NA")
                         .font(.title2)
                     Spacer()
+                  
+                    
+                    Text("#\(missionContext.flightNumber ?? 404)")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                        .padding(.trailing, 10)
                     
                 }
                 .padding(.bottom, 3.0)
@@ -42,5 +48,11 @@ struct Launch: View {
             }
             .padding(.all, 1.0)
         }
+    }
+}
+
+struct Launch_Previews: PreviewProvider {
+    static var previews: some View {
+    Launch(missionContext: Preview)
     }
 }

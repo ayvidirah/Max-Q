@@ -14,7 +14,7 @@ struct SearchBar: View {
     var body: some View {
         HStack {
             
-            TextField("Search for missions", text: $text)
+            TextField("Misson Name, Description, & Boosters", text: $text)
                 .padding(7)
                 .padding(.horizontal, 5)
                 .cornerRadius(20)
