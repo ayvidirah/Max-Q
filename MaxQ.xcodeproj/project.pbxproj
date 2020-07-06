@@ -73,7 +73,6 @@
 		4719157624B103B4003736FC /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		47255C3624B083AB0073F9F0 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		47255C3924B085AE0073F9F0 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
-		473B5C4624B1BCB000CD17B8 /* LICSENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICSENSE; sourceTree = "<group>"; };
 		47737AD024B0F93500E0E568 /* LaunchSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchSite.swift; sourceTree = "<group>"; };
 		47737AD124B0F93500E0E568 /* SecondStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondStage.swift; sourceTree = "<group>"; };
 		47737AD224B0F93500E0E568 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
@@ -156,7 +155,6 @@
 		47BD1FD924AF9D5D00BE6CCB = {
 			isa = PBXGroup;
 			children = (
-				473B5C4624B1BCB000CD17B8 /* LICSENSE */,
 				47BD1FDE24AF9D5D00BE6CCB /* Shared */,
 				47BD1FE824AF9D5E00BE6CCB /* iOS */,
 				47BD1FEF24AF9D5E00BE6CCB /* macOS */,
