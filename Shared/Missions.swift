@@ -12,19 +12,18 @@ struct Missions: View {
     var body: some View {
         NavigationView{
             List(missions.Missions, id: \.flightNumber) { mission in
-                NavigationLink(
-                    destination: Detail(mission: mission)){
+                NavigationLink(destination: Detail(mission: mission)){
                     Launch(missionContext: mission)
-                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 3)
                 }
                 
             }
             .navigationTitle(Text("Missions"))
+            .listStyle(InsetListStyle())
             
-
-           
+            
+            
         }
-       
+        
     }
     
 }

@@ -32,17 +32,18 @@ struct Detail: View {
                         
                         
                     }
-            
+                    
                     Text(mission.details ?? "Mission Details N/A")
                         .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                        .lineLimit(5)
+                        .lineLimit(nil)
                         .multilineTextAlignment(.leading)
                         //   .foregroundColor(.secondary)
-                        .font(.subheadline)
+                        .font(.caption)
                         .padding(.bottom, 3.0)
                     
                 }
                 .padding(.all, 1.0)
+                
             }
             
             Divider()
@@ -51,7 +52,9 @@ struct Detail: View {
                 .font(.title)
                 .padding(.bottom, 20)
             
-            Text(mission.launchYear ?? "")
+            Text(mission.launchSite?.siteNameLong ?? "")
+                .padding(.bottom, 20)
+            Text(mission.launchDateLocal ?? "")
             
             Divider()
             Text("Webcast")
@@ -61,14 +64,20 @@ struct Detail: View {
             Link("Webcast of \(mission.missionName ?? "Mission")", destination: URL(string: "\(mission.links?.videoLink ?? "https://spacex.com/")")!)
             
             
-            
             Spacer()
             
         }
+        
         .navigationTitle(mission.missionName ?? "Mission")
-        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 3)
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 10)
     }
     
     
     
+    
+}
+struct Detail_Previews: PreviewProvider {
+    static var previews: some View {
+        Detail(mission: Preview)
+    }
 }

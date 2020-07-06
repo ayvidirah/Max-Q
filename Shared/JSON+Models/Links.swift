@@ -3,10 +3,11 @@
 //
 //   let links = try Links(json)
 
-import Foundation
+import SwiftUI
 
 // MARK: - Links
-public struct Links: Codable {
+public struct Links: Codable, Identifiable {
+    public var id: Int?
     public var missionPatch, missionPatchSmall: String?
     public var redditCampaign, redditLaunch, redditRecovery, redditMedia: String?
     public var presskit: String?

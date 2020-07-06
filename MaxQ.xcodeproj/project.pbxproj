@@ -15,6 +15,8 @@
 		47255C3824B083AB0073F9F0 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47255C3624B083AB0073F9F0 /* Sidebar.swift */; };
 		47255C3A24B085AE0073F9F0 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47255C3924B085AE0073F9F0 /* Detail.swift */; };
 		47255C3B24B085AE0073F9F0 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47255C3924B085AE0073F9F0 /* Detail.swift */; };
+		472FB1EC24B3923E000C8482 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472FB1EB24B3923E000C8482 /* Placeholder.swift */; };
+		472FB1ED24B3923E000C8482 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472FB1EB24B3923E000C8482 /* Placeholder.swift */; };
 		47737ADB24B0F93500E0E568 /* LaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47737AD024B0F93500E0E568 /* LaunchSite.swift */; };
 		47737ADC24B0F93500E0E568 /* LaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47737AD024B0F93500E0E568 /* LaunchSite.swift */; };
 		47737ADD24B0F93500E0E568 /* SecondStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47737AD124B0F93500E0E568 /* SecondStage.swift */; };
@@ -39,8 +41,8 @@
 		47737AF024B0F93500E0E568 /* FirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47737ADA24B0F93500E0E568 /* FirstStage.swift */; };
 		47BD1FFB24AF9D5E00BE6CCB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD1FFA24AF9D5E00BE6CCB /* Tests_iOS.swift */; };
 		47BD200624AF9D5E00BE6CCB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD200524AF9D5E00BE6CCB /* Tests_macOS.swift */; };
-		47BD200824AF9D5E00BE6CCB /* SpaceAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD1FDF24AF9D5D00BE6CCB /* SpaceAppUIApp.swift */; };
-		47BD200924AF9D5E00BE6CCB /* SpaceAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD1FDF24AF9D5D00BE6CCB /* SpaceAppUIApp.swift */; };
+		47BD200824AF9D5E00BE6CCB /* MaxQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD1FDF24AF9D5D00BE6CCB /* MaxQApp.swift */; };
+		47BD200924AF9D5E00BE6CCB /* MaxQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD1FDF24AF9D5D00BE6CCB /* MaxQApp.swift */; };
 		47BD200A24AF9D5E00BE6CCB /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD1FE024AF9D5D00BE6CCB /* Missions.swift */; };
 		47BD200B24AF9D5E00BE6CCB /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BD1FE024AF9D5D00BE6CCB /* Missions.swift */; };
 		47BD200C24AF9D5E00BE6CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BD1FE124AF9D5E00BE6CCB /* Assets.xcassets */; };
@@ -73,6 +75,7 @@
 		4719157624B103B4003736FC /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		47255C3624B083AB0073F9F0 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		47255C3924B085AE0073F9F0 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		472FB1EB24B3923E000C8482 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		47737AD024B0F93500E0E568 /* LaunchSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchSite.swift; sourceTree = "<group>"; };
 		47737AD124B0F93500E0E568 /* SecondStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondStage.swift; sourceTree = "<group>"; };
 		47737AD224B0F93500E0E568 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
@@ -84,10 +87,10 @@
 		47737AD824B0F93500E0E568 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		47737AD924B0F93500E0E568 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		47737ADA24B0F93500E0E568 /* FirstStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstStage.swift; sourceTree = "<group>"; };
-		47BD1FDF24AF9D5D00BE6CCB /* SpaceAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppUIApp.swift; sourceTree = "<group>"; };
+		47BD1FDF24AF9D5D00BE6CCB /* MaxQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxQApp.swift; sourceTree = "<group>"; };
 		47BD1FE024AF9D5D00BE6CCB /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
 		47BD1FE124AF9D5E00BE6CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		47BD1FE624AF9D5E00BE6CCB /* MaxQAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxQAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BD1FE624AF9D5E00BE6CCB /* MaxQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BD1FE924AF9D5E00BE6CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47BD1FEE24AF9D5E00BE6CCB /* Max Q.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Max Q.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BD1FF024AF9D5E00BE6CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,10 +171,11 @@
 			isa = PBXGroup;
 			children = (
 				47737ACF24B0F93500E0E568 /* JSON+Models */,
-				47BD1FDF24AF9D5D00BE6CCB /* SpaceAppUIApp.swift */,
+				47BD1FDF24AF9D5D00BE6CCB /* MaxQApp.swift */,
 				47E8DE9624B10F4000F499D4 /* SearchBar.swift */,
 				47255C3924B085AE0073F9F0 /* Detail.swift */,
 				47BD1FE024AF9D5D00BE6CCB /* Missions.swift */,
+				472FB1EB24B3923E000C8482 /* Placeholder.swift */,
 				4713DBDE24B07A52000024E5 /* Launch.swift */,
 				47BD1FE124AF9D5E00BE6CCB /* Assets.xcassets */,
 				47255C3624B083AB0073F9F0 /* Sidebar.swift */,
@@ -184,7 +188,7 @@
 		47BD1FE724AF9D5E00BE6CCB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47BD1FE624AF9D5E00BE6CCB /* MaxQAppUI.app */,
+				47BD1FE624AF9D5E00BE6CCB /* MaxQ.app */,
 				47BD1FEE24AF9D5E00BE6CCB /* Max Q.app */,
 				47BD1FF624AF9D5E00BE6CCB /* Tests iOS.xctest */,
 				47BD200124AF9D5E00BE6CCB /* Tests macOS.xctest */,
@@ -244,7 +248,7 @@
 			);
 			name = iOS;
 			productName = iOS;
-			productReference = 47BD1FE624AF9D5E00BE6CCB /* MaxQAppUI.app */;
+			productReference = 47BD1FE624AF9D5E00BE6CCB /* MaxQ.app */;
 			productType = "com.apple.product-type.application";
 		};
 		47BD1FED24AF9D5E00BE6CCB /* macOS */ = {
@@ -395,6 +399,7 @@
 				47737AE124B0F93500E0E568 /* Rocket.swift in Sources */,
 				4713DBDF24B07A52000024E5 /* Launch.swift in Sources */,
 				47737AE324B0F93500E0E568 /* JSONSchemaSupport.swift in Sources */,
+				472FB1EC24B3923E000C8482 /* Placeholder.swift in Sources */,
 				47737AE924B0F93500E0E568 /* Fairings.swift in Sources */,
 				47737ADF24B0F93500E0E568 /* Links.swift in Sources */,
 				47737ADD24B0F93500E0E568 /* SecondStage.swift in Sources */,
@@ -402,7 +407,7 @@
 				47E8DE9724B10F4000F499D4 /* SearchBar.swift in Sources */,
 				47255C3724B083AB0073F9F0 /* Sidebar.swift in Sources */,
 				47F7393124B0A1D100121FD2 /* Logic.swift in Sources */,
-				47BD200824AF9D5E00BE6CCB /* SpaceAppUIApp.swift in Sources */,
+				47BD200824AF9D5E00BE6CCB /* MaxQApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +426,7 @@
 				47737AE224B0F93500E0E568 /* Rocket.swift in Sources */,
 				4713DBE024B07A52000024E5 /* Launch.swift in Sources */,
 				47737AE424B0F93500E0E568 /* JSONSchemaSupport.swift in Sources */,
+				472FB1ED24B3923E000C8482 /* Placeholder.swift in Sources */,
 				47737AEA24B0F93500E0E568 /* Fairings.swift in Sources */,
 				47737AE024B0F93500E0E568 /* Links.swift in Sources */,
 				47737ADE24B0F93500E0E568 /* SecondStage.swift in Sources */,
@@ -428,7 +434,7 @@
 				47E8DE9824B10F4000F499D4 /* SearchBar.swift in Sources */,
 				47255C3824B083AB0073F9F0 /* Sidebar.swift in Sources */,
 				47F7393224B0A1D200121FD2 /* Logic.swift in Sources */,
-				47BD200924AF9D5E00BE6CCB /* SpaceAppUIApp.swift in Sources */,
+				47BD200924AF9D5E00BE6CCB /* MaxQApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,8 +586,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38VEJ8HDSY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -590,7 +597,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hariharanm.os.MaxQ;
-				PRODUCT_NAME = MaxQAppUI;
+				PRODUCT_NAME = MaxQ;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -603,8 +610,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38VEJ8HDSY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -613,7 +621,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hariharanm.os.MaxQ;
-				PRODUCT_NAME = MaxQAppUI;
+				PRODUCT_NAME = MaxQ;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -628,10 +636,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 38VEJ8HDSY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -654,10 +662,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 38VEJ8HDSY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
