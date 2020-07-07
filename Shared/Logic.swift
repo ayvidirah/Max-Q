@@ -22,7 +22,7 @@ public class GetData: ObservableObject{
             } else {
                 
                 guard let data = data else {return}
-             //   print(String(data: data, encoding: .utf8)!)
+                print(String(data: data, encoding: .utf8)!)
                 
                 do {
                     let parsed = try JSONDecoder().decode([Launches].self, from: data)

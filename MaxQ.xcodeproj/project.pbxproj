@@ -51,6 +51,8 @@
 		47BD200D24AF9D5E00BE6CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BD1FE124AF9D5E00BE6CCB /* Assets.xcassets */; };
 		47E8DE9724B10F4000F499D4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8DE9624B10F4000F499D4 /* SearchBar.swift */; };
 		47E8DE9824B10F4000F499D4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8DE9624B10F4000F499D4 /* SearchBar.swift */; };
+		47F6ABD324B467BA00B974AC /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F6ABD224B467BA00B974AC /* RemoteImage.swift */; };
+		47F6ABD424B467BA00B974AC /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F6ABD224B467BA00B974AC /* RemoteImage.swift */; };
 		47F7393124B0A1D100121FD2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7393024B0A1D100121FD2 /* Logic.swift */; };
 		47F7393224B0A1D200121FD2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7393024B0A1D100121FD2 /* Logic.swift */; };
 /* End PBXBuildFile section */
@@ -106,6 +108,7 @@
 		47BD200524AF9D5E00BE6CCB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		47BD200724AF9D5E00BE6CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47E8DE9624B10F4000F499D4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		47F6ABD224B467BA00B974AC /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		47F7393024B0A1D100121FD2 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +190,7 @@
 				4719157624B103B4003736FC /* PreviewData.swift */,
 				470B444A24B3C3DD0002AEB8 /* Scratchpad.txt */,
 				472FD47524B3D18A008DF658 /* Extensions.swift */,
+				47F6ABD224B467BA00B974AC /* RemoteImage.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -409,6 +413,7 @@
 				47737AE924B0F93500E0E568 /* Fairings.swift in Sources */,
 				472FD47624B3D18A008DF658 /* Extensions.swift in Sources */,
 				47737ADF24B0F93500E0E568 /* Links.swift in Sources */,
+				47F6ABD324B467BA00B974AC /* RemoteImage.swift in Sources */,
 				47737ADD24B0F93500E0E568 /* SecondStage.swift in Sources */,
 				4719157724B103B4003736FC /* PreviewData.swift in Sources */,
 				47E8DE9724B10F4000F499D4 /* SearchBar.swift in Sources */,
@@ -437,6 +442,7 @@
 				47737AEA24B0F93500E0E568 /* Fairings.swift in Sources */,
 				472FD47724B3D18A008DF658 /* Extensions.swift in Sources */,
 				47737AE024B0F93500E0E568 /* Links.swift in Sources */,
+				47F6ABD424B467BA00B974AC /* RemoteImage.swift in Sources */,
 				47737ADE24B0F93500E0E568 /* SecondStage.swift in Sources */,
 				4719157824B103B4003736FC /* PreviewData.swift in Sources */,
 				47E8DE9824B10F4000F499D4 /* SearchBar.swift in Sources */,

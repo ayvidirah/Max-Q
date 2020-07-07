@@ -19,6 +19,7 @@ struct SearchBar: View {
                 .padding(.horizontal, 5)
                 .cornerRadius(20)
                 .padding(.horizontal, 5)
+                
                 .onTapGesture {
                     self.isEditing = true
                     

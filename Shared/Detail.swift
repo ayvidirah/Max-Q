@@ -19,12 +19,26 @@ struct Detail: View {
                 VStack(alignment: .leading){
                     HStack(alignment: .center){
                         
-                        Image("patch")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 50, height: 50)
-                            .cornerRadius(25)
-                            .padding(.all, 3)
+                        RemoteImage(url: URL(string: mission.links?.missionPatch ?? "https://www.spacex.com/static/images/share.jpg")!, errorView: { error in
+                     //       Text(error.localizedDescription)
+                            Image("patch")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(25)
+                        }, imageView: { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(25)
+                        }, loadingView: {
+                            Image("patch")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 50, height: 50)
+                                .cornerRadius(25)
+                        })
                         
                         Text("\(mission.rocket?.rocketName ?? "") - \(mission.rocket?.firstStage?.cores?.first?.coreSerial ?? "") - Block \(mission.rocket?.firstStage?.cores?.first?.block ?? 404)")
                             .font(.title3)

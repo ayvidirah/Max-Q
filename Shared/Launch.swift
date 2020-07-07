@@ -12,11 +12,26 @@ struct Launch: View {
     
     var body: some View {
         HStack{
-            Image("patch")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 50, height: 50)
-                .cornerRadius(25)
+            RemoteImage(url: URL(string: missionContext.links?.missionPatch ?? "https://www.spacex.com/static/images/share.jpg")!, errorView: { error in
+         //       Text(error.localizedDescription)
+                Image("patch")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(25)
+            }, imageView: { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(25)
+            }, loadingView: {
+                Image("patch")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(25)
+            })
             
             VStack(alignment: .leading){
                 HStack(alignment: .bottom){
