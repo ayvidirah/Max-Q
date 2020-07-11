@@ -20,7 +20,7 @@ struct Detail: View {
                     HStack(alignment: .center){
                         
                         RemoteImage(url: URL(string: mission.links?.missionPatch ?? "https://www.spacex.com/static/images/share.jpg")!, errorView: { error in
-                     //       Text(error.localizedDescription)
+                            //       Text(error.localizedDescription)
                             Image("patch")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -71,15 +71,20 @@ struct Detail: View {
             Text(mission.launchSite?.siteNameLong ?? "")
                 .padding(.bottom, 20)
             
+            Text(relativeTimeFrom(mission.launchDateLocal!))
+                .padding(.bottom, 5)
             Text(readableDate(mission.launchDateLocal ?? ""))
+                .font(.footnote)
+                .foregroundColor(.gray)
+            
             
             if mission.links?.videoLink != nil {
-            Divider()
-            Text("Webcast")
-                .font(.title)
-                .padding(.bottom, 20)
-            
-         
+                Divider()
+                Text("Webcast")
+                    .font(.title)
+                    .padding(.bottom, 20)
+                
+                
                 Link("Webcast of \(mission.missionName ?? "Mission")", destination: URL(string: "\(mission.links?.videoLink ?? "https://spacex.com/")")!)
             } else {
                 Divider()
@@ -90,14 +95,13 @@ struct Detail: View {
                 Link("Official info about \(mission.missionName ?? "Mission") at spacex.com", destination: URL(string: "https://spacex.com/")!)
             }
             
-
             
-            
-            Spacer()
             
         }
         .navigationTitle(mission.missionName ?? "Mission")
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 10)
+        Spacer()
+        
     }
     #elseif os(macOS)
     var body: some View {
@@ -145,16 +149,16 @@ struct Detail: View {
             
             Text(mission.launchSite?.siteNameLong ?? "")
                 .padding(.bottom, 20)
-
+            
             Text(readableDate(mission.launchDateLocal ?? ""))
             
             if mission.links?.videoLink != nil {
-            Divider()
-            Text("Webcast")
-                .font(.title)
-                .padding(.bottom, 20)
-            
-         
+                Divider()
+                Text("Webcast")
+                    .font(.title)
+                    .padding(.bottom, 20)
+                
+                
                 Link("Webcast of \(mission.missionName ?? "Mission")", destination: URL(string: "\(mission.links?.videoLink ?? "https://spacex.com/")")!)
             } else {
                 Divider()
@@ -169,19 +173,22 @@ struct Detail: View {
             Spacer()
             
         }
-        
-        .frame(minWidth: 100, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: 500, minHeight: 100, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: 500, alignment: .center)
-        .navigationTitle(mission.missionName ?? "Mission")
-        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 5)
+        Divider()
+        Text("Booster Information")
+            .font(.title)
+            .padding(.bottom, 20)
+            
+            .frame(minWidth: 100, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: 500, minHeight: 100, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: 500, alignment: .center)
+            .navigationTitle(mission.missionName ?? "Mission")
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 5)
     }
-
+    
     #endif
     
 }
-//struct Detail_iOS_Previews: PreviewProvider {
-//    static var previews: some View {
-//Detail(mission: Preview)
-//    }
-//}
-
+struct Detail_iOS_Previews: PreviewProvider {
+    static var previews: some View {
+        Detail(mission: Preview)
+    }
+}
 

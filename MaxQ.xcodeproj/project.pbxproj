@@ -55,6 +55,10 @@
 		47F6ABD424B467BA00B974AC /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F6ABD224B467BA00B974AC /* RemoteImage.swift */; };
 		47F7393124B0A1D100121FD2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7393024B0A1D100121FD2 /* Logic.swift */; };
 		47F7393224B0A1D200121FD2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7393024B0A1D100121FD2 /* Logic.swift */; };
+		5A2C615A24B8E76F00A97F58 /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C615924B8E76F00A97F58 /* Cores.swift */; };
+		5A2C615B24B8E76F00A97F58 /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C615924B8E76F00A97F58 /* Cores.swift */; };
+		5A2C615D24B8F2B500A97F58 /* AllCores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C615C24B8F2B500A97F58 /* AllCores.swift */; };
+		5A2C615E24B8F2B500A97F58 /* AllCores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C615C24B8F2B500A97F58 /* AllCores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +114,8 @@
 		47E8DE9624B10F4000F499D4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		47F6ABD224B467BA00B974AC /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		47F7393024B0A1D100121FD2 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		5A2C615924B8E76F00A97F58 /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
+		5A2C615C24B8F2B500A97F58 /* AllCores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 				47737AD824B0F93500E0E568 /* Core.swift */,
 				47737AD924B0F93500E0E568 /* Payload.swift */,
 				47737ADA24B0F93500E0E568 /* FirstStage.swift */,
+				5A2C615924B8E76F00A97F58 /* Cores.swift */,
 			);
 			path = "JSON+Models";
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 				470B444A24B3C3DD0002AEB8 /* Scratchpad.txt */,
 				472FD47524B3D18A008DF658 /* Extensions.swift */,
 				47F6ABD224B467BA00B974AC /* RemoteImage.swift */,
+				5A2C615C24B8F2B500A97F58 /* AllCores.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -402,6 +410,7 @@
 				47737AE524B0F93500E0E568 /* OrbitParams.swift in Sources */,
 				47737AE724B0F93500E0E568 /* Launches.swift in Sources */,
 				47737AED24B0F93500E0E568 /* Payload.swift in Sources */,
+				5A2C615A24B8E76F00A97F58 /* Cores.swift in Sources */,
 				47737AEF24B0F93500E0E568 /* FirstStage.swift in Sources */,
 				47BD200A24AF9D5E00BE6CCB /* Missions.swift in Sources */,
 				47737AEB24B0F93500E0E568 /* Core.swift in Sources */,
@@ -419,6 +428,7 @@
 				47E8DE9724B10F4000F499D4 /* SearchBar.swift in Sources */,
 				47255C3724B083AB0073F9F0 /* Sidebar.swift in Sources */,
 				47F7393124B0A1D100121FD2 /* Logic.swift in Sources */,
+				5A2C615D24B8F2B500A97F58 /* AllCores.swift in Sources */,
 				47BD200824AF9D5E00BE6CCB /* MaxQApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +441,7 @@
 				47737AE624B0F93500E0E568 /* OrbitParams.swift in Sources */,
 				47737AE824B0F93500E0E568 /* Launches.swift in Sources */,
 				47737AEE24B0F93500E0E568 /* Payload.swift in Sources */,
+				5A2C615B24B8E76F00A97F58 /* Cores.swift in Sources */,
 				47737AF024B0F93500E0E568 /* FirstStage.swift in Sources */,
 				47BD200B24AF9D5E00BE6CCB /* Missions.swift in Sources */,
 				47737AEC24B0F93500E0E568 /* Core.swift in Sources */,
@@ -448,6 +459,7 @@
 				47E8DE9824B10F4000F499D4 /* SearchBar.swift in Sources */,
 				47255C3824B083AB0073F9F0 /* Sidebar.swift in Sources */,
 				47F7393224B0A1D200121FD2 /* Logic.swift in Sources */,
+				5A2C615E24B8F2B500A97F58 /* AllCores.swift in Sources */,
 				47BD200924AF9D5E00BE6CCB /* MaxQApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
